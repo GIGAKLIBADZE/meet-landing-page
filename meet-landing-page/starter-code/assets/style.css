@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    min-height: 100vh; 
+    font-family: "Red Hat Display" sans-serif;
+    background-color: #fafafa;
+    /* overflow: hidden !important; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body header {
+    padding-top: 48px;
+    padding-bottom: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 119px;
+    height: 28px;
+}
+
+.users {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user_photos_left, .user_photos_right {
+    width: 210px;
+    margin-top: 54px;
+}
+
+.slogan {
+    width: 327px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #28283D;
+    line-height: 44px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.about {
+    width: 327px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #87879D;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.download-button {
+    width: 193px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #4D96A9;
+    border: none;
+    margin-top: 32px;
+}
+
+.download {
+    font-size: 16px;
+    font-weight: 900;
+    color: #FFF;
+    line-height: 26px;
+}
+
+.version1 {
+    font-size: 16px;
+    font-weight: 900;
+    color: #8FE3F9;
+    line-height: 26px;
+}
+
+.for-what {
+    width: 139px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #855FB1;
+    border: none;
+    margin-top: 16px;
+}
+
+.for-what p {
+    font-size: 16px;
+    font-weight: 900;
+    color: #FFF;
+    line-height: 26px;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+.photos {
+    display: flex;
+    gap: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.woman_in_videocall, .women_videochatting, .men_in_meeting, .man_texting {
+    flex: 9;
+    max-width: 47%;
+    border-radius: 12px;
+}
+
+.woman_in_videocall, .women_videochatting {
+    align-self: flex-start;
+}
+
+.men_in_meeting, .man_texting {
+    align-self: flex-end;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cyan_text {
+    font-size: 16;
+    font-weight: 900;
+    color: #4D96A9;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+main h2 {
+    width: 327;
+    font-size: 32px;
+    font-weight: 900;
+    color: #28283D;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.describe {
+    width: 327px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #87879D;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.line1 {
+    width: 1px;
+    height: 84px;
+    background-color: #87879D;
+    opacity: 0.25;
+    margin-top: 64px;
+}
+
+.circle1 {
+    width: 56px;
+    height: 56px;
+    border-radius: 29px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1 p {
+    width: 18px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #87879D;
+    line-height: 26px;
+}
+
+body footer {
+    background-image: url(./mobile/image-footer.jpg);
+    background-size: cover;
+    /* opacity: 0.1045; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 72px;
+}
+
+footer h3 {
+    width: 327px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #FAFAFA;
+    line-height: 36px;
+    text-align: center;
+}
+
+.final_description {
+    width: 327px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FAFAFA;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.footer-button {
+    width: 193px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #855FB1;
+    border: none;
+    margin-top: 32px;
+}
+
+.download {
+    font-size: 16px;
+    font-weight: 900;
+    color: #FFF;
+    line-height: 26px;
+}
+
+.version2 {
+    font-size: 16px;
+    font-weight: 900;
+    color: #D9B8FF;
+    line-height: 26px; 
+}
+
+
+
+
+.footer-img {
+    width: 270px;
+}
