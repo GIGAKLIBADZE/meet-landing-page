@@ -9,9 +9,10 @@
 
 body {
     min-height: 100vh; 
-    font-family: "Red Hat Display" sans-serif;
+    max-width: 100%;
+    font-family: "Red Hat Display", sans-serif;
     background-color: #fafafa;
-    /* overflow: hidden !important; */
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,6 @@ body {
 
 body header {
     padding-top: 48px;
-    padding-bottom: 31px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,15 +30,27 @@ body header {
     height: 28px;
 }
 
+.header_textes_and_buttons {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
 .users {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.user_photos_left, .user_photos_right {
-    width: 210px;
+.users_photos_mobile_and_tablet {
     margin-top: 54px;
+    width: 110%;
+}
+
+.users_photos_desktop_left, .users_photos_desktop_right {
+    display: none;
 }
 
 .slogan {
@@ -61,13 +73,20 @@ body header {
     margin-top: 24px;
 }
 
-.download-button {
+.buttons_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.download_button {
     width: 193px;
     height: 58px;
     border-radius: 29px;
     background-color: #4D96A9;
     border: none;
-    margin-top: 32px;
 }
 
 .download {
@@ -84,16 +103,15 @@ body header {
     line-height: 26px;
 }
 
-.for-what {
+.for_what {
     width: 139px;
     height: 58px;
     border-radius: 29px;
     background-color: #855FB1;
     border: none;
-    margin-top: 16px;
 }
 
-.for-what p {
+.for_what p {
     font-size: 16px;
     font-weight: 900;
     color: #FFF;
@@ -101,30 +119,61 @@ body header {
     text-align: center;
 }
 
+.line1 {
+    width: 1px;
+    height: 84px;
+    background-color: #87879D;
+    opacity: 0.25;
+    margin-top: 64px;
+}
+
+.circle1 {
+    width: 56px;
+    height: 56px;
+    border-radius: 29px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1 p {
+    width: 18px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #87879D;
+    line-height: 26px;
+}
+
 main {
-    padding-bottom: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .photos {
     display: flex;
     gap: 14px;
-    padding-left: 24px;
-    padding-right: 24px;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.woman_in_videocall, .women_videochatting, .men_in_meeting, .man_texting {
+.first_two_photos, .second_two_photos {
     flex: 9;
     max-width: 47%;
     border-radius: 12px;
 }
 
-.woman_in_videocall, .women_videochatting {
+.first_two_photos {
     align-self: flex-start;
 }
 
-.men_in_meeting, .man_texting {
+.second_two_photos {
     align-self: flex-end;
 }
 
@@ -164,7 +213,7 @@ main h2 {
     margin-top: 32px;
 }
 
-.line1 {
+.line2 {
     width: 1px;
     height: 84px;
     background-color: #87879D;
@@ -172,7 +221,7 @@ main h2 {
     margin-top: 64px;
 }
 
-.circle1 {
+.circle2 {
     width: 56px;
     height: 56px;
     border-radius: 29px;
@@ -182,27 +231,40 @@ main h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
-.circle1 p {
+.circle2 p {
     width: 18px;
     font-size: 16px;
     font-weight: 900;
     color: #87879D;
     line-height: 26px;
-}
+} 
 
 body footer {
-    background-image: url(./mobile/image-footer.jpg);
+    background-image: url(./meet-landing-page/starter-code/assets/mobile/image-footer.jpg);
     background-size: cover;
-    /* opacity: 0.1045; */
+    background-position: center;
+    margin-top: -28px;
+    width: 100%;
+    position: relative; 
+}
+
+.footer_container {
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: 0.4045;
+    background-color: cyan;
+    position: absolute;
+}
+
+.footer_textes {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 90px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 72px;
 }
 
 footer h3 {
@@ -212,6 +274,7 @@ footer h3 {
     color: #FAFAFA;
     line-height: 36px;
     text-align: center;
+    margin-top: 92px;
 }
 
 .final_description {
@@ -224,13 +287,14 @@ footer h3 {
     margin-top: 24px;
 }
 
-.footer-button {
+.footer_button {
     width: 193px;
     height: 58px;
     border-radius: 29px;
     background-color: #855FB1;
     border: none;
     margin-top: 32px;
+    margin-bottom: 72px;
 }
 
 .download {
@@ -247,9 +311,153 @@ footer h3 {
     line-height: 26px; 
 }
 
+@media only screen and (min-width: 768px) {
+    .user_photos {
+        margin-top: 74px;
+    }
 
+    .slogan {
+        width: 339px;
+        margin-top: 72px;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px;
+    }
 
+    .about {
+        width: 457px;
+    }
 
-.footer-img {
-    width: 270px;
+    .buttons_holder {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .line1 {
+        margin-top: 80px;
+    }
+
+    .first_two_photos {
+        max-width: 23%;
+
+    }
+
+    .second_two_photos {
+        max-width: 23%;
+    }
+
+    .cyan_text {
+        margin-top: 50px;
+    }
+
+    main h2 {
+        margin-top: 16px;
+        width: 445px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .describe {
+        width: 573px;
+    }    
+
+    .line2 {
+        margin-top: 70px;
+    }
+
+    footer h3 {
+        width: 457px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .final-description {
+        width: 573px;
+        margin-top: 32px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body header {
+        padding-top: 80px;
+    }
+
+    .header_except_logo {
+        display: flex;
+        gap: 88px;
+    }
+
+    .users_photos_mobile_and_tablet {
+        display: none;
+    }
+
+    .users_photos_desktop_left 
+    {
+        display: block;
+        margin-top: 61px;
+        height: fit-content;
+    }
+
+    .users_photos_desktop_right {
+        display: block;
+        margin-top: 116px;
+        height: fit-content;
+    }
+
+    .slogan {
+        margin-top: 108px;
+    }
+
+    .about {
+        width: 540px;
+        font-size: 18px;
+    }
+
+    footer h3 {
+        width: 457px;
+    }
+
+    .final_description {
+        width: 350px;
+    }
+
+    .download_button:hover {
+        cursor: pointer;
+        background-color: #71C0D4;
+    }
+
+    .for_what:hover,  .footer_button:hover{
+        cursor: pointer;
+        background-color: #B18BDD;
+    }
+
+    body footer {
+        background-image: url(./meet-landing-page/starter-code/assets/desktop/image-footer.jpg);
+        width: 100%;
+    }
+
+    .footer_textes {
+        display: flex;
+        flex-direction: row;
+        left: 0;
+        padding-bottom: 115px;
+    }
+
+    footer h3 {
+        width: 350px;
+        margin-left: 165px;
+        margin-top: 88px;
+    }
+
+    .final_description {
+        width: 350px;
+        margin-left: 125px;
+        margin-top: 88px;
+    }
+
+    .footer_button {
+        margin-left: 92px;
+        margin-top: 131px;
+    }
 }

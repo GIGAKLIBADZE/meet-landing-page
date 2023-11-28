@@ -4,25 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet Landing Page</title>
-  <link rel="stylesheet" href="./assets/style.css">
-  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="icon" type="image/png" href="./meet-landing-page/starter-code/assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
-    <img class="logo" src="./assets/logo.svg" alt="logo">
-    <div class="users">
-      <img class="user_photos_left" src="./assets/desktop/image-hero-left.png" alt="user photos">
-      <img class="user_photos_right" src="./assets/desktop/image-hero-right.png" alt="user photos">
+    <img class="logo" src="./meet-landing-page/starter-code/assets/logo.svg" alt="logo">
+    <div class="header_except_logo">
+      <div class="users">
+        <img class="users_photos_mobile_and_tablet" src="./meet-landing-page/starter-code/assets/tablet/image-hero.png" alt="user photos">
+        <img class="users_photos_desktop_left" src="./meet-landing-page/starter-code/assets/desktop/image-hero-left.png" alt="user photos">
+      </div>
+      <div class="header_textes_and_buttons">
+        <h1 class="slogan">Group Chat for Everyone</h1>
+        <p class="about">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="buttons_holder">
+          <button class="download_button">
+            <small class="download">Download</small>
+            <small class="version1">v1.3</small>
+          </button>
+          <button class="for_what">
+            <p>What is it?</p>
+          </button>
+        </div>
+      </div>  
+      <img class="users_photos_desktop_right" src="./meet-landing-page/starter-code/assets/desktop/image-hero-right.png" alt="users photos">
     </div>
-    <h1 class="slogan">Group Chat for Everyone</h1>
-    <p class="about">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-    <button class="download-button">
-      <small class="download">Download</small>
-      <small class="version1">v1.3</small>
-    </button>
-    <button class="for-what">
-      <p>What is it?</p>
-    </button>
     <div class="line1"></div>
     <div class="circle1">
       <p>01</p>
@@ -30,10 +38,10 @@
   </header>
   <main>
     <div class="photos">
-      <img class="woman_in_videocall" src="./assets/desktop/image-woman-in-videocall.jpg" alt="woman in videcall">
-      <img class="women_videochatting" src="./assets/desktop/image-women-videochatting.jpg" alt="women videochatting">
-      <img class="men_in_meeting" src="./assets/desktop/image-men-in-meeting.jpg" alt="men in meeting">
-      <img class="man_texting" src="./assets/desktop/image-man-texting.jpg" alt="man texting">
+      <img class="first_two_photos" src="./meet-landing-page/starter-code/assets/desktop/image-woman-in-videocall.jpg" alt="woman in videcall">
+      <img class="first_two_photos" src="./meet-landing-page/starter-code/assets/desktop/image-women-videochatting.jpg" alt="women videochatting">
+      <img class="second_two_photos" src="./meet-landing-page/starter-code/assets/desktop/image-men-in-meeting.jpg" alt="men in meeting">
+      <img class="second_two_photos" src="./meet-landing-page/starter-code/assets/desktop/image-man-texting.jpg" alt="man texting">
     </div>
     <div class="main-text">
       <p class="cyan_text">Built for modern use</p>
@@ -43,16 +51,20 @@
       </p>
     </div>
     <div class="line2"></div>
-    <div cllass="circle2"></div>
+    <div class="circle2">
+      <p>02</p>
+    </div>
   </main>
   <footer>
-    <!-- <img class="footer-img" src="./assets/mobile/image-footer.jpg" alt="woman with earphones"> -->
-    <h3>Experience more together</h3>
-    <p class="final_description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <button class="footer-button">
-      <small class="download">Download</small>
-      <small class="version2">v1.3</small>
-    </button>
+    <div class="footer_container"></div>
+    <div class="footer_textes">
+      <h3>Experience more together</h3>
+      <p class="final_description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <button class="footer_button">
+        <small class="download">Download</small>
+        <small class="version2">v1.3</small>
+      </button>
+    </div>
   </footer>
 </body>
 </html>
